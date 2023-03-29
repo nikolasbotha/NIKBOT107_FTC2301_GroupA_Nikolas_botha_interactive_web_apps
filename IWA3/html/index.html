@@ -1,0 +1,50 @@
+<!-- 
+    why did this not work:
+    - the scripts.js did not use the import function syntax. missing "import", .js , and {}
+    - the configuration.js code did not declare or export the variable
+    - source tag was incorrect in html file
+
+
+    What changes do you need to make to achieve the intended behavior?:
+    -use the correct syntax to implement modules in js that correctly share information with each other
+
+
+    Are there any other ways in which it can be been solved?:
+    one needn't use modules, the script tags could be called inline in the html 
+    else, the script could be consolidated into one file 
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="module" src="../scripts/configuration.js" defer></script>
+    <script type="module" src="../scripts/scripts.js" defer></script>
+</head>
+<body>
+    <h1>Welcome</h1>
+	<p>This is our wesite</p> 
+</body>
+
+	<footer>Loading...</footer>
+</html> 
+
+<!-- old code for index.html
+
+<html>
+	<head>
+		<scripts scr="./scripts">
+  </head>
+
+	<body>
+		<h1>Welcome</h1>
+		<p>This is our wesite</p>
+	</body>
+
+	<footer>Loading...</footer>
+</html> -->
