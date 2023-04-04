@@ -1,15 +1,18 @@
+// let date = document.getElementById("year").value;
+// let status = document.getElementById("occupation").value;
+
 const date = 2050;
 
-
-if (date == 2050) {
-
-    const status = "student"
+if (date === 2050) {
+    
+    let status = "student"
     let count = 0;
 
     console.log("January, New Year's day")
     console.log("March, Human Rights Day")
-    console.log("April, Family Day")
- 	console.log("April, Freedom Day")
+    let month = "April"
+    console.log(month, ", Family Day")
+ 	console.log(month, ", Freedom Day")
     count += 4;
  
         if (status == "student"){
@@ -19,7 +22,7 @@ if (date == 2050) {
 
     console.log("August, Women’s Day")
     console.log("September, Heritage Day")
-    let month = 'December'
+    month = 'December'
     console.log(month, 'Day of Reconciliation')
     count += 3
 
