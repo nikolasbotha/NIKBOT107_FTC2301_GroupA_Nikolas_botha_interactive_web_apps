@@ -87,7 +87,7 @@ const createHtml = (athlete) => {
   const day = date.getDate();
   const month = date.toLocaleString("en-US", {month: "short"})
   const year = date.getFullYear();
-  console.log(day, month, year )
+  
 
   const first = athlete.races[0].time[0]
   const second = athlete.races[0].time[1]
