@@ -105,6 +105,8 @@ export const html = {
 for (const columnName of COLUMNS) {
     html.columns[columnName] = document.querySelector(`[data-column="${columnName}"]`)
     html.area[columnName] = document.querySelector(`[data-area="${columnName}"]`)
+    //console.log(html.columns[columnName]);
+    //console.log(html.area[columnName])
 }
 
 /**
@@ -121,6 +123,7 @@ export const updateDraggingHtml = (newDragging) => {
     for (const columnName of COLUMNS) {
         const value = columnName === over ? 'rgba(0, 160, 70, 0.2)' : ''
         html.area[columnName].style.backgroundColor = value
+    
     }
 }
 
@@ -152,3 +155,4 @@ html.other.add.focus()
 
 html.add.table.appendChild(createTableOptionsHtml())
 html.edit.table.appendChild(createTableOptionsHtml())
+

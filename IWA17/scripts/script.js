@@ -53,11 +53,13 @@ const createData = () => {
       value.days.unshift({
         dayOfWeek: dayIndex,
         value: isValid ? date : "",
+       
       });
     }
     daysArray.push(value)
   }
   console.log(daysArray)
+
   return daysArray
 };
 
