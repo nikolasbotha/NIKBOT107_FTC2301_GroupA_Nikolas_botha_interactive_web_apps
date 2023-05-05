@@ -69,14 +69,14 @@ const handleHelpToggle = (event) => {
 
 
 const handleAddToggle = (event) => {
-
+    html.add.title.value = null;
+    html.add.table.value = null;
     if (html.add.overlay.hasAttribute('open')){
         html.add.overlay.removeAttribute('open')
     }
     else {
      html.add.overlay.setAttribute('open', true)
     }}
-
 const handleAddSubmit = (event) => {
 
     event.preventDefault();
@@ -147,7 +147,9 @@ html.add.form.addEventListener('submit', handleAddSubmit)    //  function 5
 html.other.grid.addEventListener('click', handleEditToggle)    //  function 6
 html.edit.cancel.addEventListener('click', handleEditToggle)    // fucntion 6
 html.edit.form.addEventListener('submit', handleEditSubmit)     //  function 7
-html.edit.delete.addEventListener('click', handleDelete)    //    fucntion 7
+html.edit.delete.addEventListener('click', handleDelete)  
+
+//    fucntion 7
 html.help.cancel.addEventListener('click', handleHelpToggle)       // function 3
 html.other.help.addEventListener('click', handleHelpToggle)     //    function 4
 
